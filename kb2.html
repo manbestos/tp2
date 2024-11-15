@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB2</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <header> 
+        <nav class="navigation">
+          <div class="nav-group">
+            <div><a href="http://167.114.152.54/~darquest1/prod/" target="_blank">Le Darquest</a></div>
+            <div><a href="guitarhero.html">Guitar Hero</a></div>
+            <div><a href="rockband.html">Rock Band</a></div>
+            <div><a href="http://167.114.152.54/~knapsak3/" target="_blank">Knapsak</a></div>
+          </div>
+          <div class="nav-group">
+            <div><a href="https://clg.qc.ca" target="_blank">Mon Cégep</a></div>
+            <div><a href="kb2.html">KB2</a></div>
+            <div><a href="https://manbestos.github.io/tp1/" target="_blank">Mon TP1</a></div>
+          </div>
+        </nav>
+      </header>
+      <header id="gradient-header">
+        <h1>Exploration des Techniques CSS non-vues en classe</h1>
+    </header>
+
+    <main>
+        <section id="image-gallery-section">
+            <h2>Galerie d'images</h2>
+            <div class="image-gallery">
+                <img src="images/dog.jpg" alt="Chien">
+                <img src="images/chien2.jpg" alt="Chien 2">
+                <img src="images/chien3.jpg" alt="Chien 3">
+            </div>
+        <div class="explanation">
+          <p>
+              <strong>Explications :</strong> Cette galerie utilise un <em>flexbox</em> pour aligner les images en ligne avec des espaces
+              entre elles. Les images sont redimensionnées avec `width` et `height`, et les coins sont arrondis grâce à `border-radius`.
+              L'effet `hover` augmente légèrement la taille des images avec une animation fluide.
+          </p>
+      </div>
+    </section>
+
+        <section id="opacity-section">
+            <h2>Effet d'opacité</h2>
+            <img src="images/chien4.jpg" alt="Chien 4" class="image-opacity">
+            <div class="explanation">
+              <p>
+                  <strong>Explications :</strong> L'image est initialement transparente (`opacity: 0.8`) et devient totalement opaque
+                  (`opacity: 1`) lorsqu'elle est survolée avec la souris grâce à une transition fluide de 0.5s.
+              </p>
+          </div>
+        </section>
+
+        <section id="rounded-border-section">
+            <h2>Bordures et coins arrondis</h2>
+            <div class="rounded-border">
+                <p>Ce contenu est entouré par une bordure arrondie avec un effet de padding.</p>
+            </div>
+            <div class="explanation">
+              <p>
+                  <strong>Explications :</strong> Le conteneur utilise une bordure noire de 5 pixels avec des coins arrondis
+                  (`border-radius: 20px`). Un padding interne de 10px assure un espacement entre le texte et les bords.
+              </p>
+          </div>
+        </section>
+<br>
+        <section class="gradient-box">
+          <h2>Dégradé Horizontal</h2>
+          <div class="explanation">
+            <p>
+                <strong>Explications :</strong> Cette section utilise un dégradé horizontal avec `linear-gradient(to right, #4facfe, #00f2fe)`.
+                La couleur passe doucement du bleu clair au cyan.
+            </p>
+        </div>
+      </section>
+
+      <section class="gradient-box vertical-gradient">
+          <h2>Dégradé Vertical</h2>
+          <div class="explanation">
+            <p>
+                <strong>Explications :</strong> Ce dégradé utilise une direction verticale avec `linear-gradient(to bottom, #a18cd1, #fbc2eb)`.
+                La couleur passe du violet au rose.
+            </p>
+        </div>
+      </section>
+
+      <section class="gradient-box diagonal-gradient">
+          <h2>Dégradé Diagonal</h2>
+          <div class="explanation">
+            <p>
+                <strong>Explications :</strong> Ce dégradé utilise une direction diagonale grâce à `linear-gradient(to bottom right, #43cea2, #185a9d)`.
+                La couleur passe du vert clair au bleu foncé.
+            </p>
+        </div>
+      </section>
+    </main>
+ 
+</body>
+</html>
